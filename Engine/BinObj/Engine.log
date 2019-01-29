@@ -1,0 +1,31 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 디렉터리가 슬래시로 끝나지 않습니다. Intermediate 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+  System.cpp
+c:\minji\academy\dxsolution\engine\include\timemanager.h(8): warning C4251: 'Engine::CTimeManager::m_mapTimer': class 'std::unordered_map<std::string,Engine::CTimer *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CTimeManager'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=std::string,
+              _Ty=Engine::CTimer *
+          ]
+  c:\minji\academy\dxsolution\engine\include\timemanager.h(8): note: 'std::unordered_map<std::string,Engine::CTimer *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=std::string,
+              _Ty=Engine::CTimer *
+          ]
+  TimeManager.cpp
+c:\minji\academy\dxsolution\engine\include\timemanager.h(8): warning C4251: 'Engine::CTimeManager::m_mapTimer': class 'std::unordered_map<std::string,Engine::CTimer *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CTimeManager'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=std::string,
+              _Ty=Engine::CTimer *
+          ]
+  c:\minji\academy\dxsolution\engine\include\timemanager.h(8): note: 'std::unordered_map<std::string,Engine::CTimer *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=std::string,
+              _Ty=Engine::CTimer *
+          ]
+  main.cpp
+  코드를 생성하고 있습니다...
+  Engine.vcxproj -> C:\Minji\academy\DXSolution\Engine\Include\../Bin\Engine_Debug.exe
