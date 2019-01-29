@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\01. System\01. Timer">
       <UniqueIdentifier>{85a6ee86-32b3-421a-84fd-02a8392bb893}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\03. Scene">
+      <UniqueIdentifier>{748e3c0b-23cc-4037-8539-9348b01973b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -45,6 +48,15 @@
     <ClInclude Include="TimeManager.h">
       <Filter>소스 파일\01. System\01. Timer</Filter>
     </ClInclude>
+    <ClInclude Include="Ref.h">
+      <Filter>소스 파일\01. System</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>소스 파일\03. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -61,6 +73,15 @@
     </ClCompile>
     <ClCompile Include="TimeManager.cpp">
       <Filter>소스 파일\01. System\01. Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Ref.cpp">
+      <Filter>소스 파일\01. System</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>소스 파일\03. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -38,7 +38,6 @@ private:
 	int LateUpdate(float fTime);
 	void Render(float fTime);
 	DECLARE_SINGLE(CSystem)
-	
 
 };
 

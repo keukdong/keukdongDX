@@ -28,6 +28,9 @@ void CTimer::Update()
 	LARGE_INTEGER tTick;
 	QueryPerformanceCounter(&tTick);
 
+	// 프레임에 걸린 시간 
+	// QueryPerformanceCounter : 현재 CPU클럭 수
+	// QueryPerformanceFrequency : 타이머의 주파수 
 	m_fDeltaTime = (tTick.QuadPart - m_tTick.QuadPart)
 		/ static_cast<float>(m_tSecond.QuadPart);
 
@@ -38,6 +41,8 @@ void CTimer::Update()
 
 	if (m_iFrame == 60)
 	{
+		// 60프레임 / 60 프레임에 걸린 시간
+		// 결과: 초당 표시하는 프레임수
 		m_fFPS = m_iFrame / m_fFPSTime;
 		m_fFPSTime = 0.f;
 		m_iFrame = 0;

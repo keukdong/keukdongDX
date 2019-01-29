@@ -94,8 +94,8 @@ bool CDevice::Init(HWND hWnd, UINT iWidth, UINT iHeight, bool bWindowMode)
 
 	D3D11_VIEWPORT	tVP = {};
 
-	tVP.Width = iWidth;
-	tVP.Height = iHeight;
+	tVP.Width = static_cast<float>(iWidth);
+	tVP.Height = static_cast<float>(iHeight);
 	tVP.MaxDepth = 1.f;
 
 	m_pContext->RSSetViewports(1, &tVP);

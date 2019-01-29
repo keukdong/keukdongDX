@@ -2,6 +2,7 @@
 #include "Device.h"
 #include "TimeManager.h"
 #include "Timer.h"
+#include "Scene/SceneManager.h"
 
 ENGINE_USING
 DEFINITION_SINGLE(CSystem)
@@ -15,6 +16,7 @@ CSystem::CSystem()
 
 CSystem::~CSystem()
 {
+	DESTROY_SINGLE(CSceneManager);
 	DESTROY_SINGLE(CTimeManager);
 	DESTROY_SINGLE(CDevice);
 }
@@ -31,9 +33,11 @@ bool CSystem::Init(HINSTANCE hInst, const TCHAR * titleName, const TCHAR * class
 	// Init device
 	if (!GET_SINGLE(CDevice)->Init(m_hWnd, iWidth, iHeight, bWindowMode))
 		return false;
-	
 	// Init Timer
 	if (!GET_SINGLE(CTimeManager)->Init())
+		return false;
+	// Init SceneManager
+	if (!GET_SINGLE(CSceneManager)->Init())
 		return false;
 
 	return true;
@@ -149,17 +153,17 @@ void CSystem::Logic()
 
 int CSystem::Input(float fTime)
 {
-	return 0;
+	return GET_SINGLE(CSceneManager)->Input(fTime);
 }
 
 int CSystem::Update(float fTime)
 {
-	return 0;
+	return GET_SINGLE(CSceneManager)->Update(fTime);
 }
 
 int CSystem::LateUpdate(float fTime)
 {
-	return 0;
+	return GET_SINGLE(CSceneManager)->LateUpdate(fTime);
 }
 
 void CSystem::Render(float fTime)
@@ -167,5 +171,6 @@ void CSystem::Render(float fTime)
 	float	fColor[4] = { 0.f, 1.f, 0.f, 1.f };
 	//device run
 	GET_SINGLE(CDevice)->ClearTarget(fColor);
+	GET_SINGLE(CSceneManager)->Render(fTime);
 	GET_SINGLE(CDevice)->Present();
 }

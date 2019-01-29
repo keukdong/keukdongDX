@@ -5,6 +5,7 @@
 #include <vector>
 #include <unordered_map>
 #include <string>
+
 using namespace std;
 
 #include <d3d11.h>
@@ -17,5 +18,5 @@ using namespace std;
 using namespace DirectX;
 using namespace DirectX::PackedVector;
 
-
 #include "Macro.h"
+#pragma warning(disable : 4251)
