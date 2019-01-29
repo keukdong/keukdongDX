@@ -3,6 +3,7 @@
 #include "TimeManager.h"
 #include "Timer.h"
 #include "Scene/SceneManager.h"
+#include "Resource/ResourceManager.h"
 
 ENGINE_USING
 DEFINITION_SINGLE(CSystem)
@@ -19,6 +20,7 @@ CSystem::~CSystem()
 	DESTROY_SINGLE(CSceneManager);
 	DESTROY_SINGLE(CTimeManager);
 	DESTROY_SINGLE(CDevice);
+	DESTROY_SINGLE(CResourceManager);
 }
 
 bool CSystem::Init(HINSTANCE hInst, const TCHAR * titleName, const TCHAR * className,
@@ -38,6 +40,9 @@ bool CSystem::Init(HINSTANCE hInst, const TCHAR * titleName, const TCHAR * class
 		return false;
 	// Init SceneManager
 	if (!GET_SINGLE(CSceneManager)->Init())
+		return false;
+	// Init resources(mesh, shader, etc...)
+	if (!GET_SINGLE(CResourceManager)->Init())
 		return false;
 
 	return true;
@@ -153,7 +158,7 @@ void CSystem::Logic()
 
 int CSystem::Input(float fTime)
 {
-	return GET_SINGLE(CSceneManager)->Input(fTime);
+	return 0;
 }
 
 int CSystem::Update(float fTime)

@@ -137,7 +137,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EngineMath.h" />
     <ClInclude Include="Ref.h" />
+    <ClInclude Include="Render\ShaderManager.h" />
+    <ClInclude Include="Resource\Mesh.h" />
+    <ClInclude Include="Resource\ResourceManager.h" />
     <ClInclude Include="Scene\Scene.h" />
     <ClInclude Include="Scene\SceneManager.h" />
     <ClInclude Include="TimeManager.h" />
@@ -147,9 +151,14 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="VertexStructure.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EngineMath.cpp" />
     <ClCompile Include="Ref.cpp" />
+    <ClCompile Include="Render\ShaderManager.cpp" />
+    <ClCompile Include="Resource\Mesh.cpp" />
+    <ClCompile Include="Resource\ResourceManager.cpp" />
     <ClCompile Include="Scene\Scene.cpp" />
     <ClCompile Include="Scene\SceneManager.cpp" />
     <ClCompile Include="TimeManager.cpp" />

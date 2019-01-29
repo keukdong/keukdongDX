@@ -114,3 +114,18 @@ void CDevice::Present()
 	m_pSwapChain->Present(0, 0);
 }
 
+inline ID3D11Device * CDevice::GetDevice() const
+{
+	return m_pDevice;
+}
+
+inline ID3D11DeviceContext * CDevice::GetContext() const
+{
+	return m_pContext;
+}
+
+inline IDXGISwapChain * CDevice::GetSwapChain() const
+{
+	return m_pSwapChain;
+}
+

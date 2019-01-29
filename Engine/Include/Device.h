@@ -16,6 +16,11 @@ public:
 	bool Init(HWND hWnd, UINT iWidth, UINT iHeight, bool bWindowMode);
 	void ClearTarget(float fClearColor[4]);
 	void Present();
+
+public:
+	ID3D11Device*			GetDevice() const;
+	ID3D11DeviceContext*	GetContext() const;
+	IDXGISwapChain*			GetSwapChain() const;
 private:
 	DECLARE_SINGLE(CDevice)
 };

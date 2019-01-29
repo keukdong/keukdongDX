@@ -41,3 +41,5 @@
 #define	_SWAPCHAIN	GET_SINGLE(CDevice)->GetSwapChain()
 #define _WINDOWHANDLE GET_SINGLE(CSystem)->GetHWnd()
 #define _WINDOWINSTANCE GET_SINGLE(CSystem)->GetHInst()
+
+#define _IFFAILED(p)	if(!p)

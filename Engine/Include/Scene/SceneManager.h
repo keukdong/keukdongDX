@@ -10,7 +10,6 @@ private:
 
 public:
 	bool Init();
-	int Input(float fTime);
 	int Update(float fTime);
 	int LateUpdate(float fTime);
 	void Render(float fTime);

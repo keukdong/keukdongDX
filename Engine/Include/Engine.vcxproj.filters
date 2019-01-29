@@ -25,14 +25,17 @@
     <Filter Include="소스 파일\03. Scene">
       <UniqueIdentifier>{748e3c0b-23cc-4037-8539-9348b01973b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\00. Engine">
+      <UniqueIdentifier>{acd9d334-73d8-4039-80c5-364dc2bae49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\04. Resource">
+      <UniqueIdentifier>{4478b4e8-a11d-4c40-90ce-d762e852c100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05. Shader">
+      <UniqueIdentifier>{2c9bb6ef-5e95-46de-9775-f872d6763401}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Macro.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -55,6 +58,27 @@
       <Filter>소스 파일\03. Scene</Filter>
     </ClInclude>
     <ClInclude Include="Scene\Scene.h">
+      <Filter>소스 파일\03. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>소스 파일\00. Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexStructure.h">
+      <Filter>소스 파일\00. Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>소스 파일\00. Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineMath.h">
+      <Filter>소스 파일\00. Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>소스 파일\04. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderManager.h">
+      <Filter>소스 파일\05. Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -81,6 +105,18 @@
       <Filter>소스 파일\03. Scene</Filter>
     </ClCompile>
     <ClCompile Include="Scene\Scene.cpp">
+      <Filter>소스 파일\03. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineMath.cpp">
+      <Filter>소스 파일\00. Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceManager.cpp">
+      <Filter>소스 파일\04. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderManager.cpp">
+      <Filter>소스 파일\05. Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

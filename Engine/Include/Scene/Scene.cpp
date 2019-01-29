@@ -14,11 +14,6 @@ bool CScene::Init()
 	return true;
 }
 
-int CScene::Input(float fTime)
-{
-	return 0;
-}
-
 int CScene::Update(float fTime)
 {
 	return 0;

@@ -22,11 +22,6 @@ bool CSceneManager::Init()
 	return true;
 }
 
-int CSceneManager::Input(float fTime)
-{
-	return m_pScene->Input(fTime);
-}
-
 int CSceneManager::Update(float fTime)
 {
 	return m_pScene->Update(fTime);

@@ -7,16 +7,6 @@
 #include <string>
 
 using namespace std;
+#include "EngineMath.h"
+#include "VertexStructure.h"
 
-#include <d3d11.h>
-#include <d3dcompiler.h>
-#include <DirectXPackedVector.h>
-
-#pragma comment(lib, "d3d11")
-#pragma comment(lib, "d3dcompiler")		
-
-using namespace DirectX;
-using namespace DirectX::PackedVector;
-
-#include "Macro.h"
-#pragma warning(disable : 4251)
