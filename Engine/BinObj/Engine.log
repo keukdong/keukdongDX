@@ -1,7 +1,8 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 디렉터리가 슬래시로 끝나지 않습니다. Intermediate 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
-  ResourceManager.cpp
-  System.cpp
+  Shader.cpp
+  ShaderManager.cpp
+c:\minji\academy\dxsolution\engine\include\render\shadermanager.cpp(107): warning C4267: '인수': 'size_t'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
      ../Bin\Engine_Debug64.lib 라이브러리 및 ../Bin\Engine_Debug64.exp 개체를 생성하고 있습니다.
   Engine.vcxproj -> C:\Minji\academy\DXSolution\Engine\Include\../Bin\Engine_Debug64.exe

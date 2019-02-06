@@ -15,6 +15,11 @@ typedef struct ENGINE_DLL _tagVertexColor
 		vPos = vtx.vPos;
 		vColor = vtx.vColor;
 	}
+	_tagVertexColor(const XMFLOAT3 _vPos, const XMFLOAT4 _vColor)
+	{
+		vPos = _vPos;
+		vColor = _vColor;
+	}
 }VertexColor, *PVertexColor;
 
 typedef struct ENGINE_DLL _tagVertexTex

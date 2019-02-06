@@ -139,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="EngineMath.h" />
     <ClInclude Include="Ref.h" />
+    <ClInclude Include="Render\Shader.h" />
     <ClInclude Include="Render\ShaderManager.h" />
     <ClInclude Include="Resource\Mesh.h" />
     <ClInclude Include="Resource\ResourceManager.h" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="EngineMath.cpp" />
     <ClCompile Include="Ref.cpp" />
+    <ClCompile Include="Render\Shader.cpp" />
     <ClCompile Include="Render\ShaderManager.cpp" />
     <ClCompile Include="Resource\Mesh.cpp" />
     <ClCompile Include="Resource\ResourceManager.cpp" />

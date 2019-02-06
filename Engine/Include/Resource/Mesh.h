@@ -12,10 +12,20 @@ private:
 	~CMesh();
 
 private:
+	ID3D11Buffer* m_pIndexbuffer;
+	ID3D11Buffer* m_pVertexbuffer;
 	ID3D11InputLayout* m_pLayout;
 
+private:
+	string m_strName;
+	string m_strShader;
+	string m_strLayout;
+
 public:
-	bool CreateMesh();
+	bool CreateMesh(const string & strMesh, const string & strShader,
+		const string & strLayout, void * pVtx, int iVtxSize, int iVtxCount,
+		D3D11_USAGE eVtxUsage, D3D11_PRIMITIVE_TOPOLOGY ePrimitive,
+		void* pIdx, int iIdxSize, int iIdxCount, D3D11_USAGE eIdxUsage, DXGI_FORMAT eFmt);
 
 public:
 	bool Init();

@@ -14,10 +14,20 @@ CResourceManager::~CResourceManager()
 
 bool CResourceManager::Init()
 {
+	/*
+	VertexColor	tVtx[3]	=
+	{
+		VertexColor(Vector3(0.f, 0.5f, 0.f), Vector4::Gold),
+		VertexColor(Vector3(0.5f, -0.5f, 0.f), Vector4::HotPink),
+		VertexColor(Vector3(-0.5f, -0.5f, 0.f), Vector4::Green)
+	};
 	
+	*/
 	VertexColor tVtx[3] = 
 	{
-
+		VertexColor(XMFLOAT3(0.f, 0.5f, 0.f), XMFLOAT4(1.f, 1.f, 1.f, 1.f)),
+		VertexColor(XMFLOAT3(0.5f, -0.5f, 0.f), XMFLOAT4(0.f, 0.f, 0.f, 0.f)),
+		VertexColor(XMFLOAT3(-0.5f, -0.5f, 0.f), XMFLOAT4(1.f, 0.f, 0.f, 0.f)),
 	};
 
 	short	sIdx[3] = { 0, 1, 2 };
@@ -52,5 +62,13 @@ bool CResourceManager::CreateMesh(const string & strMesh, const string & strShad
 	if (pMesh)
 		return false;
 	
+	pMesh = new CMesh;
+	_IFFAILED(pMesh->CreateMesh(strMesh, strShader, strLayout, pVtx, iVtxSize, iVtxCount,
+		eVtxUsage, ePrimitive, pIdx, iIdxSize, iIdxCount, eIdxUsage, eFmt))
+	{
+		SAFE_RELEASE(pMesh);
+		return false;
+	}
+
 	return true;
 }
